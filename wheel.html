@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="animation.css" />
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: aqua;
+    }
+    .wheel {
+      border: 2px solid;
+      border-radius: 70%;
+      margin-left: 120px;
+      position: absolute;
+      margin-top: 9%;
+      height: 55vw;
+      width: 55vw;
+      max-width: 500px;
+      max-height: 500px;
+      animation: wheel 10s infinite linear;
+    }
+    .line {
+      background-color: green;
+      width: 50%;
+      height: 2px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: 0% 0%;
+    }
+    .line:nth-of-type(2) {
+      transform: rotate(45deg);
+    }
+    .line:nth-of-type(3) {
+      transform: rotate(90deg);
+    }
+    .line:nth-of-type(4) {
+      transform: rotate(135deg);
+    }
+    .line:nth-of-type(5) {
+      transform: rotate(180deg);
+    }
+    .line:nth-of-type(6) {
+      transform: rotate(225deg);
+    }
+    .line:nth-of-type(7) {
+      transform: rotate(270deg);
+    }
+    .line:nth-of-type(8) {
+      transform: rotate(315deg);
+    }
+    .pod {
+      background: transparent;
+      width: 20%;
+      height: 20%;
+      position: absolute;
+      border: 2px solid;
+      transform-origin: 50% 0%;
+      animation: pod 10s infinite linear;
+    }
+    .pod:nth-of-type(1) {
+      right: -9.5%;
+      top: 49.9%;
+    }
+    .pod:nth-of-type(2) {
+      right: 74%;
+      top: 85%;
+    }
+    .pod:nth-of-type(3) {
+      right: 90%;
+      top: 49.5%;
+    }
+    .pod:nth-of-type(4) {
+      right: 40.6%;
+      top: 99.6%;
+    }
+    .pod:nth-of-type(5) {
+      left: 75%;
+      top: 85%;
+    }
+    .pod:nth-of-type(6) {
+      right: 73.4%;
+      top: 14.2%;
+    }
+    .pod:nth-of-type(7) {
+      right: 40%;
+      top: -0.1%;
+    }
+    .pod:nth-of-type(8) {
+      left: 74.4%;
+      top: 15%;
+    }
+    .pod img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+    }
+    @keyframes wheel {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes pod {
+      0% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(180deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="wheel">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <div class="pod">
+        <img src="10.jpg" alt="pod" />
+      </div>
+      <div class="pod">
+        <img src="20.jpg" alt="pod" />
+      </div>
+      <div class="pod">
+        <img src="6.jpg" alt="pod" />
+      </div>
+      <div class="pod">
+        <img src="5.jpg" alt="pod" />
+      </div>
+      <div class="pod">
+        <img src="PD (22).JPG" alt="pod" />
+      </div>
+      <div class="pod">
+        <img src="13.jpg" alt="pod" />
+      </div>
+      <div class="pod">
+        <img src="14.jpg" alt="pod" />
+      </div>
+      <div class="pod">
+        <img src="15.jpg" alt="pod" />
+      </div>
+    </div>
+  </body>
+</html>
